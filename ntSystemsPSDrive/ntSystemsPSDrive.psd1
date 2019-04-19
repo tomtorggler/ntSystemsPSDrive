@@ -24,13 +24,13 @@ GUID = '43947ac6-484a-4069-8dd2-086ab642fd13'
 Author = '@torggler'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+CompanyName = 'https://ntsystems.it/'
 
 # Copyright statement for this module
 Copyright = '(c) @torggler. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'A SHiPS provider for ntSystems.it'
 
 # Minimum version of the PowerShell engine required by this module
 # PowerShellVersion = ''
@@ -69,7 +69,7 @@ RequiredModules = @('SHiPS')
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = '*'
+FunctionsToExport = @('New-ntSystemsPSDrive')
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = '*'
@@ -87,7 +87,7 @@ AliasesToExport = '*'
 # ModuleList = @()
 
 # List of all files packaged with this module
-# FileList = @()
+FileList = @('ntSystemsPSDrive.psd1','ntSystemsPSDrive.psm1')
 
 # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
 PrivateData = @{
@@ -95,13 +95,13 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        Tags = @('ntSystems','SHiPS')
 
         # A URL to the license for this module.
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://ntsystems.it/PowerShell/ntSystemsPSDrive/'
 
         # A URL to an icon representing this module.
         # IconUri = ''
